@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Registration</title>
+    <style>
+      body {
+        font-family: sans-serif, Calibri;
+        background-color: #72b7f4;
+      }
+      h1 {
+        color: #232729;
+        text-align: center;
+      }
+      form {
+        background-color: #bfddf7;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #333333;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        background-color: #ffffff;
+      }
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+      }
+      input[type="submit"] {
+        background-color: #1a73e8;
+        color: #ffffff;
+        border: none;
+        padding: 12px 22px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #0059b3;
+      }
+      input[type="reset"] {
+        background-color: #1a73e8;
+        color: #ffffff;
+        border: none;
+        padding: 12px 22px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="reset"]:hover {
+        background-color: #0059b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Job Application Registration</h1>
+    <form action="">
+      <label for="full_name">Full Name:</label><br />
+      <input type="text" id="full_name" name="full_name" required /><br />
+      <label for="email">Email Address:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+      <label for="phone">Phone Number:</label><br />
+      <input type="tel" id="phone" name="phone" maxlength="10" required /><br />
+      <label for="uploadresume">Upload (PDF or Word):</label><br />
+      <input
+        type="file"
+        id="uploadresume"
+        name="uploadresume"
+        accept=".PDF,.doc,.docx"
+        required
+      /><br />
+      <label for="position">Position Applied:</label><br />
+      <select name="position" id="position" required>
+        <option value="">Select Option</option>
+        <option value="HR">HR</option>
+        <option value="Web-developer">Web-developer</option>
+        <option value="Android-developer">Android-developer</option>
+        <option value="Manager">Manager</option>
+        <option value="Backend-developer">Backend-developer</option>
+        <option value="Full-stack">Full-stack</option></select
+      ><br />
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
+    </form>
+  </body>
+</html>
