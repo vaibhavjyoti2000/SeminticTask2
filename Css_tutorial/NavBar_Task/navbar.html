@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav-Bar</title>
+    <script src="https://example.com/fontawesome/v6.5.2/js/all.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background-color: #102c57;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 2px 2px 4px #ffcbcb;
+      }
+      .left {
+        height: 10vh;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #ffb1b1;
+        text-shadow: 2px 2px 3px gray;
+      }
+      .center {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .center ul {
+        height: 10vh;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+      .center ul li {
+        list-style: none;
+        font-size: 1.5rem;
+        padding: 5px;
+        border-radius: 5px;
+        color: #ffb1b1;
+      }
+      .center ul li:hover {
+        background-color: #ffb1b1;
+        color: #1679ab;
+        cursor: pointer;
+        transition: all ease 1s;
+      }
+
+      .right {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+      }
+      .log-in {
+        background-color: #1679ab;
+        color: #ffb1b1;
+        font: bold;
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .log-in:hover {
+        background-color: #ffcbcb;
+        color: #1679ab;
+      }
+      .sign-up {
+        background-color: #ffb1b1;
+        color: #1679ab;
+        font: bold;
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .sign-up:hover {
+        background-color: #1679ab;
+        color: #ffb1b1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="left">Logo</div>
+      <div class="center">
+        <ul>
+          <li>Home</li>
+          <li>Gallery</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="right">
+        <span class="log-in">Log-in</span>
+        <span class="sign-up">Sign-up</span>
+      </div>
+    </nav>
+  </body>
+</html>
